@@ -1,3 +1,4 @@
+var expen =0;
 function show(id) {
     if (document.getElementById) {
         var elemento = document.getElementById(id);
@@ -15,7 +16,9 @@ function hide(id) {
 function swap(id1, id2) {
     hide(id1);
     show(id2);
-    javascript: document.body.style.backgroundColor = '#a4a5a4';
+    document.body.style.backgroundColor = '#a4a5a4';
+    expen +=5.99;
+    alert("usted ha gastado: "+expen);
 }
 
 

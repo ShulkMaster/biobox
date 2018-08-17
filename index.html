@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
+
+<head>
     <title>My Touhou Life</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="stylux/css1.css">
@@ -21,7 +22,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" onclick="javascript: document.getElementById(id).style.visibility = 'visible';">
                                         Sidebar activation
                                     </a>
                             </ul>
@@ -38,14 +39,19 @@
         </div>
         <h1 id="titulos">Mi Biografía</h1>
     </header>
-    <aside>
+        <div id = "fakebar" class="sidenav">
+            <p>Para poder usar las caracterisicas completas de la barra denesita agregar modulos, añada el paquete de modulos PRO por 3.99$</p>
+            <input type="button" value="Comprar" style='cursor: pointer;' onClick="">
+        </div>
+        <!--
         <div class="sidenav">
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Clients</a>
             <a href="#">Contact</a>
         </div>
-    </aside>
+        -->
+
     <div id="bio">
         <div>
             <p>Mi nombre es Yury Alejandro Rivera Quintanilla, naci esn San Salvador en diciembre 8 de 1997. Soy el mayor de 3 hermanos, mis dos hermanos menores son 10 y 17 años menores que yo.</p>
@@ -58,4 +64,5 @@
         <input type="button" value="Comprar" style='cursor: pointer;' onClick="swap('stock','propack')">
     </div>
 </body>
+
 </html>
